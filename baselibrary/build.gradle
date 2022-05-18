@@ -1,0 +1,91 @@
+apply plugin: 'com.android.library'
+
+def config = rootProject.ext.ver
+def library = rootProject.ext.library
+
+android {
+    compileSdkVersion config.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+
+    }
+    buildTypes {
+        debug {
+            buildConfigField("boolean", "isDebug", "true")
+            minifyEnabled false
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+        release {
+            buildConfigField("boolean", "isDebug", "false")
+            minifyEnabled false
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+//    publishNonDefault true //默认不为发布版本
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    //Android支持库
+//    api library.supportV4
+    api library.supportV7
+    api library.design
+    api library.cardview
+    api library.constraint
+    api library.recyclerview
+
+    //RxJava2+Retrofit2 网络框架
+    api library.okio
+    api library.okhttp
+    api library.okhttp_logging
+    api library.retrofit2
+    api library.gson
+    api library.retrofit2_gson
+    api library.retrofit2_adapter
+    api library.rxjava2
+    api library.rxlifecycle2_components
+
+    //屏幕适配
+    api library.autosize
+
+    //常用工具库
+    api library.circleimageview
+    api library.roundedimageview
+    api library.BaseRecyclerViewAdapterHelper
+    api library.SmartRefreshLayout
+    api library.rxpermissions2
+    api library.logger
+    api 'com.mirkowu:BaseToolbar:0.1.0'
+    api library.StatusBarUtil
+    api library.glide
+
+    api library.butterknife
+    annotationProcessor library.butterknife_compiler
+    api library.TabLayout
+
+    api library.arouter_api
+
+    api library.Banner
+    api library.ImagePicker
+    api 'org.greenrobot:eventbus:3.1.1'
+//    //内存泄漏检测
+//    debugApi 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+//    releaseApi 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+    /*网络*/
+    api 'cn.finalteam:okhttpfinal:2.0.7'
+    /*弹窗*/
+    api 'com.github.1em0nsOft:LemonHello4Android:1.0.1'
+    implementation 'com.amap.api:location:latest.integration'
+    implementation 'com.amap.api:search:latest.integration'
+}

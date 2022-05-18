@@ -1,0 +1,6 @@
+include ':baselibrary'
+include ':module_app',
+        ':module_main'
+
+
+include ':videobli'

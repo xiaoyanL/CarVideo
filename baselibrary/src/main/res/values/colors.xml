@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E6D9B</color>
+    <color name="colorPrimaryDark">#1E6D9B</color>
+    <color name="colorAccent">#60a5fe</color>
+
+    <color name="bg_red">#FF5050</color>
+    <color name="red">#ff0000</color>
+    <color name="red_title_bg">#C7000A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="line">#E6E6E6</color>
+    <color name="line_f3f3f3">#f3f3f3</color>
+
+     <!--字体颜色-->
+    <color name="text_red">#FF5050</color>
+    <color name="text_darkgray_c8">#c8c8c8</color>
+    <color name="text_black">#323232</color>
+    <color name="text_262626">#262626</color>
+
+    <color name="text_ash">#787878</color>
+    <color name="text_FFBA00">#FFBA00</color>
+    <color name="text_B29269">#B29269</color>
+    <color name="text_54AF66">#54AF66</color>
+    <color name="text_2441D1">#2441D1</color>
+    <color name="text_565656">#565656</color>
+    <color name="text_f20c0c">#f20c0c</color>
+    <color name="text_999999">#999999</color>
+    <color name="text_212121">#212121</color>
+    <color name="text_ffa800">#ffa800</color>
+
+
+
+    <color name="bg_fff6e5">#fff6e5</color>
+    <color name="bg_ececec">#ececec</color>
+    <color name="bg_3eb99c">#3eb99c</color>
+    <color name="bg_lin">#ebebeb</color>
+    <color name="bg_abs_dadada">#dbdbdb</color>
+</resources>

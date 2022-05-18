@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="com.aliyun.apsaravideo.sophon.videocall.AnswerActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#C7000A" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/view"
+        android:background="@drawable/shape_gradual" />
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/login_white_circular">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ic_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/logo"
+            app:riv_border_color="#333333"
+            app:riv_corner_radius="50dp"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ic_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="陈琳"
+            android:textColor="@color/text_black"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="事业三部"
+            android:textColor="@color/text_darkgray_c8"
+            android:textSize="14sp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_specialName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_part"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="地址"
+            android:textColor="@color/text_black"
+            android:textSize="18sp"></TextView>
+
+        <com.aliyun.apsaravideo.sophon.widget.SpreadView
+            android:id="@+id/tv_refuse"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            app:spread_center_color="@color/bg_red"
+            app:spread_delay_milliseconds="35"
+            app:spread_distance="5"
+            app:spread_max_radius="90"
+            app:spread_radius="100"
+            app:spread_radius_text="拒绝"
+            app:spread_spread_color="@color/bg_red" />
+
+        <com.aliyun.apsaravideo.sophon.widget.SpreadView
+            android:id="@+id/sw_Answer"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:spread_center_color="@color/colorAccent"
+            app:spread_delay_milliseconds="35"
+            app:spread_distance="5"
+            app:spread_max_radius="90"
+            app:spread_radius_text="接听"
+            app:spread_radius="100"
+            app:spread_spread_color="@color/colorAccent" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

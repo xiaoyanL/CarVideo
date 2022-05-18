@@ -1,0 +1,111 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="FullScreenVideoTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.Fullscreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/background_dark</item>
+    </style>
+
+    <style name="AppTheme.Fullscreen.Dark" parent="AppTheme.Fullscreen">
+        <item name="android:windowBackground">@android:color/background_dark</item>
+    </style>
+
+    <style name="AppTheme.TransparentBar.FullScreen" parent="AppTheme.TransparentBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="ModeDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="alivc_record_line_style" parent="@android:style/Widget.EditText">
+
+        <item name="android:maxLines">2</item>
+        <item name="android:minHeight">@dimen/dimen_20</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@dimen/margin_15</item>
+        <item name="android:layout_marginTop">@dimen/margin_10</item>
+        <item name="android:layout_marginLeft">@dimen/margin_15</item>
+        <item name="android:layout_marginRight">@dimen/margin_15</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:background">@drawable/alivc_record_round_bkg</item>
+        <item name="android:textSize">@dimen/alivc_common_font_14</item>
+    </style>
+
+    <style name="RoundImageButtonStyle" parent="Base.Widget.AppCompat.ImageButton">
+        <item name="android:layout_width">@dimen/dimen_64</item>
+        <item name="android:layout_height">@dimen/dimen_64</item>
+        <item name="android:layout_marginLeft">@dimen/margin_6</item>
+        <item name="android:layout_marginRight">@dimen/margin_6</item>
+
+    </style>
+    <declare-styleable name="ComSectorView">
+        <attr name="backgroundColor" format="color"/>
+        <!--圆的颜色-->
+        <attr name="circleColor" format="color"/>
+        <attr name="startAngle" format="float"/>
+        <!--内环颜色-->
+        <attr name="annulusColor" format="color"/>
+        <!--文字-->
+        <attr name="SectorOneText" format="string"/>
+
+        <attr name="SectorTwoText" format="string"/>
+        <!--文字颜色-->
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <!--内环半径-->
+        <attr name="annulusRadius" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="SpreadView">
+        <!--中心圆颜色-->
+        <attr name="spread_center_color" format="color" />
+        <!--中心圆半径-->
+        <attr name="spread_radius" format="integer" />
+        <!--中心圆文字-->
+        <attr name="spread_radius_text" format="string" />
+        <!--扩散圆颜色-->
+        <attr name="spread_spread_color" format="color" />
+        <!--扩散间距-->
+        <attr name="spread_distance" format="integer" />
+        <!--扩散最大半径-->
+        <attr name="spread_max_radius" format="integer" />
+        <!--扩散延迟间隔-->
+        <attr name="spread_delay_milliseconds" format="integer" />
+
+    </declare-styleable>
+</resources>
